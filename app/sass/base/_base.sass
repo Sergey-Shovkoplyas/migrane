@@ -1,16 +1,28 @@
+*, 
+*:before, 
+*:after 
+  box-sizing: border-box
+
+html, 
+body 
+  overflow-x: hidden
+  
 body 
   min-width: 320px
-  font-family: "Arial", sans-serif
-  font-size: 18px
-  line-height: 1.2
+  font-family: "DINPro", sans-serif
+  font-size: 14px
+  font-weight: 500
+  line-height: 1.64
+  color: #000
+  background-color: #F6F4F4
 
-.row 
-  display: flex
-  flex-wrap: wrap
-  margin: 0 -15px
-  
+a 
+  text-decoration: none
+  color: inherit
+
 .container
-  max-width: 1200px
+  // outline: 1px solid green
+  max-width: 990px
   margin: 0 auto
   padding: 0 15px
   +media-lg
@@ -21,3 +33,7 @@ body
     max-width: 430px
   +media-xs
     width: auto
+
+.main-content
+  +media-sm 
+    margin-top: 72px

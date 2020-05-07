@@ -1,0 +1,461 @@
+.migrane__nav
+  margin-bottom: 30px
+
+.migrane__nav-list
+  display: flex
+  justify-content: space-between
+  max-width: 745px
+  margin: 0 auto
+  list-style: none
+  padding: 22px 30px
+  background-color: #fff 
+  border-radius: 8px
+  box-shadow: 5px 5px 25px 0px rgba(179, 179, 179, .25)
+  a 
+    position: relative
+    display: block
+    padding: 3px
+    color: #4A4A4A
+  a::after 
+    position: absolute
+    content: ''
+    bottom: -22px
+    left: 0
+    width: 0%
+    height: 3px
+    background-color: #5E77FF
+    transition: .3s
+  a:hover 
+    color: #5E77FF
+    &::after 
+      width: 100%
+  +media-sm 
+    padding: 10px
+    flex-direction: column
+    text-align: center
+    a
+      padding: 5px 
+    li 
+      border-bottom: 1px solid rgba(0, 0, 0, .2)
+    li:last-child 
+      border-bottom: none
+
+// ------------------ .migrane__rating -------------------
+.migrane__rating
+  padding: 28px 30px
+  background: linear-gradient(135deg, #FFCE97 0%, #FFA05E 100%)
+  +media-sm 
+    padding: 25px 0px
+
+.migrane__rating-top
+  padding: 20px
+  background: #fff 
+  box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, .3)
+  margin-bottom: 15px
+
+.migrane__rating-title
+  max-width: 330px
+  margin: 0 auto
+  margin-bottom: 20px
+  text-align: center
+  font-size: 20px
+  line-height: 1.25
+  color: #FF4A49
+  +media-sm 
+    font-size: 18px
+
+.migrane__rating-row
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -20px 
+  +media-md 
+    margin: 0 -10px
+  +media-sm 
+    flex-wrap: wrap
+
+.migrane__rating-item
+  position: relative
+  width: 20%
+  padding: 0 20px
+  padding-top: 110px
+  font-weight: 400
+  text-align: center
+  &::before
+    position: absolute
+    content: ''
+    top: 0
+    left: 50%
+    width: 55%
+    height: 100px
+    transform: translate(-50%, 0)
+  &:nth-child(1)
+    &::before
+      background: url('../img/migrane-1.png') no-repeat center
+  &:nth-child(2)
+    opacity: .8
+    &::before
+      background: url('../img/migrane-2.png') no-repeat center
+  &:nth-child(3)
+    opacity: .6
+    &::before
+      background: url('../img/migrane-3.png') no-repeat center
+  &:nth-child(4)
+    opacity: .4
+    &::before
+      background: url('../img/migrane-4.png') no-repeat center
+  &:nth-child(5)
+    opacity: .2
+    &::before
+      background: url('../img/migrane-5.png') no-repeat center
+  +media-md
+    padding: 0 10px
+    padding-top: 110px
+  +media-sm
+    width: 100%
+    margin-bottom: 15px
+
+.migrane__rating-bottom 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  +media-sm
+    flex-wrap: wrap
+
+.migrane__rating-img
+  margin-right: 35px
+  width: 225px
+  img 
+    width: 100%
+  +media-sm
+    margin: 0 auto
+
+.migrane__rating-text-wrap
+  width: 700px
+  padding: 33px
+  padding-right: 50px
+  border: 1px solid #fff
+  color: #fff 
+  font-size: 23px
+  line-height: 1.26
+  +media-sm
+    padding: 20px
+    font-size: 19px
+    margin-top: -20px
+
+.migrane__rating-text
+  margin-bottom: 20px
+
+.migrane__rating-link
+  text-decoration: underline
+  transition: .3s
+  &:hover 
+    color: #5E77FF
+
+
+// ---------------------- .migrane-fiatures ---------------------
+
+.migrane-fiatures-wrap 
+  background-color: #fff
+
+.migrane-link
+  width: 510px
+  position: absolute
+  bottom: 42px
+  right: 180px
+  color: #fff !important
+  font-size: 23px
+  line-height: 31px
+  text-decoration: underline !important
+  background-color: #FFBA7E
+  border: 1px solid #fff
+  padding: 10px
+  border-radius: 8px
+
+.migrane-fiatures
+  box-sizing: border-box
+  font-weight: 500
+  padding-bottom: 40px
+
+.migrane-fiatures__title
+  padding-top: 20px
+  color: #3F3F3F
+  font-size: 30px
+
+.migrane-fiatures__text
+  font-size: 16px
+  line-height: 23px
+  margin-bottom: 10px
+
+.migrane-fiatures__row
+  display: flex
+  // height: 375px
+
+.migrane-fiatures__left
+  width: 307px
+  margin-right: 25px
+  flex-shrink: 0
+  +media-sm 
+    display: none
+
+.migrane-fiatures__img
+  position: relative
+  width: 100%
+  position: relative
+  cursor: pointer
+  overflow: hidden
+
+.migrane-fiatures__papap
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  color: #fff
+  padding: 67px 37px 20px
+  background: linear-gradient(to bottom, #FFAA97 0%, #FFA05E 100%)
+  cursor: auto
+
+.migrane-fiatures__papap-close
+  position: absolute
+  top: 14px
+  right: 14px
+  padding-right: 20px
+  font-size: 14px
+  font-weight: 600
+  color: rgba(255, 255, 255, 0.5)
+  cursor: pointer
+
+  &::before, &::after
+    position: absolute
+    content: ''
+    top: 50%
+    right: 0
+    transform: translate(0, -50%)
+    width: 15px
+    height: 2px
+    background-color: #fff
+
+  &::before
+    transform: translate(0, -50%) rotate(45deg)
+
+  &::after
+    transform: translate(0, -50%) rotate(-45deg)
+
+.migrane-fiatures__papap p
+  margin: 0
+  font-size: 14px
+  line-height: 23px
+
+.migrane-fiatures__img
+  img
+    width: 100%
+    transition: .3s
+
+  &:hover img
+    transform: scale(1.05)
+
+.migrane-fiatures__list
+  padding: 0
+  margin: 0
+  list-style: none
+
+.migrane-fiatures__item
+  padding-left: 43px
+  margin-bottom: 16px
+
+.migrane-fiatures__phase
+  position: relative
+  color: #868686
+  font-size: 20px
+  cursor: pointer
+  transition: .3s
+
+  &:hover, &.active
+    color: #5E77FF
+
+  &::before
+    position: absolute
+    content: ''
+    color: #fff
+    text-align: center
+    top: 50%
+    left: -43px
+    transform: translate(0, -50%)
+    width: 31px
+    height: 31px
+    border-radius: 50%
+    background: #868686
+    transition: .3s
+
+.migrane-fiatures__item
+  &:nth-child(1) .migrane-fiatures__phase::before
+    background: #868686 url('../img/migrate-1.png') no-repeat center
+
+  &:nth-child(2) .migrane-fiatures__phase::before
+    background: #868686 url('../img/migrate-2.png') no-repeat center
+
+  &:nth-child(3) .migrane-fiatures__phase::before
+    background: #868686 url('../img/migrate-3.png') no-repeat center
+
+  &:nth-child(4) .migrane-fiatures__phase::before
+    background: #868686 url('../img/migrate-4.png') no-repeat center
+
+  .migrane-fiatures__phase
+    &:hover::before, &.active::before
+      background-color: #5E77FF
+
+.migrane-fiatures__descr
+  display: none
+
+  &.active
+    display: block
+
+.migrane-fiatures__about
+  margin-bottom: 10px
+  font-size: 14px
+  line-height: 23px
+  color: #5E77FF
+
+.migrane-fiatures__sublist 
+  list-style: none
+  padding: 0
+
+.migrane-fiatures__sublist li
+  position: relative
+  padding-left: 28px
+  margin-bottom: 7px
+  font-size: 13px
+  color: #000
+
+  &::before
+    position: absolute
+    content: ''
+    left: 0
+    top: 50%
+    transform: translate(0, -50%)
+    width: 19px
+    height: 19px
+    border-radius: 50%
+    border: 2px solid #5E77FF
+    box-sizing: border-box
+
+  &::after
+    position: absolute
+    content: ''
+    left: 5px
+    top: 50%
+    transform: translate(0, -50%)
+    width: 9px
+    height: 9px
+    border-radius: 50%
+    background-color: #5E77FF
+
+.migrane-fiatures__btn
+  max-width: 450px 
+  margin: 0 auto
+
+/* ------------- migrane-reason ------------------------------------ */
+
+.migrane-reason-wrap
+  padding: 30px 0px 20px 
+  background-color: #EEEDED
+
+.migrane-reason__btn
+  max-width: 450px 
+  margin: 0 auto
+
+.migrane-reason
+  width: 830px
+  font-weight: 500
+  padding-top: 10px
+  margin-bottom: 23px
+  padding-left: 30px
+  padding-bottom: 40px
+  background-color: #fff
+  border-radius: 8px
+  box-sizing: border-box
+  box-shadow: 5px 5px 25px rgba(179, 179, 179, 0.25)
+  +media-sm 
+    width: 100%
+    padding-left: 10px
+
+.migrane-reason__title
+  font-size: 28px
+  color: #5E77FF
+  margin-bottom: 20px
+
+.migrane-reason__item
+  width: 490px
+  margin-right: 170px
+  font-size: 14px
+  line-height: 23px
+  opacity: .5
+  +media-sm 
+    width: 280px
+
+.migrane-reason__slider
+  .slick-dots
+    bottom: -50px
+
+  .slick-active
+    opacity: 1
+
+  .slick-dots li
+    width: 9px
+    height: 9px
+    border-radius: 50%
+
+    button
+      width: 9px
+      height: 9px
+      border-radius: 50%
+
+      &:before
+        content: ''
+        width: 9px
+        height: 9px
+        border-radius: 50%
+        background-color: #5E77FF
+
+  .slick-prev
+    width: 23px
+    height: 33px
+    z-index: 1
+    
+
+  .slick-next
+    width: 23px
+    height: 33px
+    z-index: 1
+    right: 200px
+
+  .slick-prev
+    left: auto
+    right: 250px
+    transform: translate(0, -50%) rotate(180deg)
+
+    &::before
+      content: ''
+      display: block
+      width: 23px
+      height: 33px
+      background: url('../img/migrate-reason-arrow.png') no-repeat center
+
+  .slick-next::before
+    content: ''
+    display: block
+    width: 23px
+    height: 33px
+    background: url('../img/migrate-reason-arrow.png') no-repeat center
+
+  .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before
+    opacity: 0
+  +media-sm 
+    .slick-next
+      top: 110%
+      right: 20px
+    .slick-prev
+      top: 110%
+      right: auto 
+      left: 20px

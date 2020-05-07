@@ -1,8 +1,11 @@
-# Start template
+# Migrane
+
+Pages
+- https://sergey-shovkoplyas.github.io/migrane/app/index.html
+- https://sergey-shovkoplyas.github.io/migrane/app/migrane.html
 
 Start template with (optional)
 - normalize.css
-- bootstrap-grid.min.css
 - jquery-3.4.1.min.js
 
 Usage 

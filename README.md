@@ -3,6 +3,7 @@
 Pages
 - https://sergey-shovkoplyas.github.io/migrane/app/index.html
 - https://sergey-shovkoplyas.github.io/migrane/app/migrane.html
+- https://sergey-shovkoplyas.github.io/migrane/app/how.html
 
 Start template with (optional)
 - normalize.css

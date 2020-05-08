@@ -40,4 +40,12 @@ $( document ).ready(function() {
 		infinite: false
 	});
 
+	// ------------------------------ how --------------------
+
+	$('.how__slider').slick({
+		slidesToShow: 1,
+		infinite: false,
+		fade: true
+	});
+
 });

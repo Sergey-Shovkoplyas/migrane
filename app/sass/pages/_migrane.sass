@@ -459,3 +459,177 @@
       top: 110%
       right: auto 
       left: 20px
+
+
+// ---------------- migrane__triger -----------------------
+
+.migrane__triger
+  padding: 22px 0px
+  background-color: #D0D0D0
+
+.migrane__triger-title 
+  font-size: 30px
+  color: #fff
+  line-height: 1.2
+  margin-bottom: 5px
+  margin-left: 50px
+  +media-sm 
+    margin-left: 0
+
+.migrane__triger-subtitle
+  font-size: 16px
+  color: #fff
+  line-height: 1.44
+  margin-left: 50px
+  +media-sm 
+    margin-left: 0
+
+
+.migrane__triger-container
+  max-width: 700px
+  margin: 0 auto
+  // outline: 1px solid yellow
+
+.migrane__triger-row
+  display: flex
+  justify-content: space-between
+  margin: 0 -12px
+  text-align: center
+  // outline: 1px solid green
+  .migrane__triger-item
+    width: 31%
+    white-space: nowrap
+    background-color: #fff
+    padding: 12px
+    margin: 8px
+    border-radius: 8px 
+    font-size: 17px
+    line-height: 1.35
+    color: #4B60D1
+    box-shadow: 0px 8px 8px 0px rgba(255, 255, 255, .2)
+    // outline: 1px solid red
+  +media-sm 
+    flex-wrap: wrap
+    .migrane__triger-item
+      width: 100%
+
+.migrane__triger-row.row-2
+  .migrane__triger-item
+    width: 31%
+  +media-sm 
+    flex-wrap: wrap
+    .migrane__triger-item
+      width: 100%
+    
+
+.migrane__triger-row.row-3
+  .migrane__triger-item
+    width: 48%
+    white-space: normal
+  +media-sm 
+    flex-wrap: wrap
+    .migrane__triger-item
+      width: 100%
+  
+.migrane__triger-row.row-4
+  .migrane__triger-item
+    width: 100%
+    white-space: normal
+
+.migrane__triger-text
+  position: relative
+  width: 515px
+  margin: 0 auto
+  padding-left: 77px
+  font-size: 16px
+  line-height: 1.4
+  color: #4A4949
+  margin-bottom: 15px
+  &::after 
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 56px
+    height: 42px
+    background: url('../img/book.png')
+  +media-sm
+    width: auto
+
+.migrane__triger-btn
+  margin: 0 auto
+  width: 450px
+  +media-sm 
+    width: 100%
+
+
+// ------------------ migrane__therapy -------------------------
+.migrane__therapy
+  padding: 25px 0px
+
+.migrane__therapy-title
+  font-size: 30px
+  color: #3F3F3F
+  margin-bottom: 5px
+
+.migrane__therapy-text
+  position: relative
+  max-width: 660px
+  margin: 0 auto
+  padding: 25px 65px 25px 125px 
+  border-radius: 6px
+  background-color: #FF5A5A
+  font-size: 17px
+  line-height: 1.35
+  color: #fff
+  margin-bottom: 20px
+  &::after 
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50px
+    transform: translate(0, -50%)
+    width: 48px
+    height: 48px
+    background: url('../img/mograne-therapy.png') no-repeat center
+  +media-sm 
+    padding: 15px
+    &::after 
+      display: none
+
+.migrane__therapy-row
+  display: flex
+  justify-content: space-between
+  margin-bottom: 30px
+  +media-sm 
+    flex-wrap: wrap
+
+.migrane__therapy-item
+  padding: 15px 30px
+  width: 395px
+  border-radius: 8px
+  box-shadow: 5px 15px 25px 0px rgba(0, 0, 0, .2)
+  +media-md 
+    width: 335px
+  +media-sm
+    width: 100%
+    &:first-child 
+      margin-bottom: 20px
+
+.migrane__therapy-item-title
+  color: #FF5A5A
+  font-size: 28px
+  line-height: 1.25
+  margin-bottom: 15px
+
+.migrane__therapy-item-text
+  font-size: 12px
+  line-height: 1.9
+  .mark 
+    color: #F9AEAE
+
+.migrane__therapy-btn
+  margin: 0 auto
+  width: 450px
+  +media-sm 
+    width: 100%

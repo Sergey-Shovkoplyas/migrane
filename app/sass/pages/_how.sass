@@ -1,0 +1,255 @@
+.how__situation
+  padding: 25px 0px 90px
+  background: url('../../img/how-situation.png') no-repeat center top 40px 
+  
+.how__situation-wrap
+  max-width: 600px
+  margin: 0 auto
+
+.how__situation-img
+  width: 105px
+  margin: 0 auto 
+  img 
+    width: 100%
+
+.how__situation-title
+  font-size: 20px 
+  line-height: 25px
+  color: #FF4A49
+  margin-bottom: 25px
+
+.how__situation-list
+  margin: 0 
+  padding: 0
+  list-style: none
+  li 
+    font-size: 17px
+    line-height: 22px
+
+
+
+// ---------------- now__slider -----------------------
+
+.how__section
+  margin-top: 20px 
+  margin-bottom: 25px
+
+.btn--gray
+  background-color: #70828B
+
+.how-section
+  font-weight: 500
+  padding-left: 94px
+
+.how__item
+  position: relative
+  outline: none
+  border-radius: 8px
+  background-color: #fff
+  padding: 25px 120px
+  +media-md 
+    padding: 25px
+  +media-sm
+    max-height: 1100px 
+    overflow-y: scroll
+
+
+.how__img
+  position: absolute
+  top: 25px
+  right: 100px
+  width: 225px
+  height: 275px
+  +media-md 
+    right: 15px
+    width: 170px
+
+.how__img-important
+  position: absolute
+  z-index: 2
+  left: -27px
+  bottom: 32px
+  width: 100px
+  height: 85px
+  background: url('../img/how-important.png') no-repeat center
+
+.how__img
+  img
+    width: 100%
+  &.opacity img
+    opacity: .4
+  +media-sm 
+    display: none
+
+.how__title
+  display: inline-block
+  width: 390px
+  margin-left: 70px
+  font-size: 28px
+  line-height: 37px
+  text-align: center
+  margin-bottom: 13px
+  +media-sm 
+    width: auto 
+    margin-left: 0
+
+.how__subtitle
+  width: 485px
+  height: 100px
+  font-size: 20px
+  line-height: 27px
+  color: #5E77FF
+  +media-sm 
+    height: auto
+    width: auto 
+    margin-left: 0
+    margin-bottom: 10px
+    font-size: 18px
+
+.how__text-top
+  height: 165px
+  width: 460px
+  font-size: 14px
+  line-height: 23px
+  margin-bottom: 60px
+  span
+    color: red
+  &.wide
+    width: 750px
+  +media-md 
+    &.wide
+      width: auto
+  +media-sm 
+    width: auto
+    height: auto
+    margin-bottom: 20px
+
+.how__text-alert
+  position: relative
+  width: 620px
+  margin-left: 57px
+  margin-bottom: 20px
+  padding: 20px 50px
+  border-radius: 8px
+  color: #fff
+  background-color: #C03143
+  font-size: 15px
+  line-height: 19px
+  text-align: center
+  box-sizing: border-box
+  +media-md 
+    width: auto 
+    margin-left: 0
+  +media-sm 
+    padding: 20px
+
+
+  &::after
+    position: absolute
+    content: ""
+    bottom: -9px
+    left: 50%
+    transform: translate(0, -50%)
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 6px 16px 0 16px
+    border-color: #C03143 transparent transparent transparent
+
+.how__text-bottom
+  width: 775px
+  font-size: 20px
+  line-height: 27px
+  margin-bottom: 20px
+  +media-md 
+    width: auto
+  +media-sm 
+    font-size: 18px
+
+.how__slider
+  .slick-prev, .slick-next
+    top: 54%
+    width: 26px
+    height: 38px
+    z-index: 1
+  +media-sm 
+    .slick-prev, .slick-next
+      top: 120px
+    .slick-prev 
+      right: auto 
+      left: 0
+    .slick-next 
+      right: 0 
+      left: auto
+
+
+  .slick-prev::after
+    position: absolute
+    left: 33px
+    top: 50%
+    transform: translate(0, -50%) rotate(-180deg)
+    content: 'предыдущая'
+    color: #5E77FF
+    font-size: 13px
+
+  .slick-next
+    &::after
+      position: absolute
+      right: -80px
+      top: 50%
+      transform: translate(0, -50%)
+      content: 'следующая'
+      color: #5E77FF
+      font-size: 13px
+
+    &.slick-disabled::after
+      opacity: 0.25
+      cursor: auto
+
+  .slick-prev.slick-disabled::after
+    opacity: 0.25
+    cursor: auto
+
+  .slick-next.slick-disabled::before
+    cursor: auto
+
+  .slick-prev
+    &.slick-disabled::before
+      cursor: auto
+
+    &::before
+      content: ''
+      display: block
+      width: 26px
+      height: 38px
+      background: url('../img/how-arrow.png') no-repeat center
+
+  .slick-next
+    &::before
+      content: ''
+      display: block
+      width: 26px
+      height: 38px
+      background: url('../img/how-arrow.png') no-repeat center
+
+    right: 425px
+
+  .slick-prev
+    left: auto
+    right: 460px
+    transform: translate(0, -50%) rotate(180deg)
+
+
+.how__slider
+  +media-sm 
+    .slick-prev, .slick-next
+      top: 120px
+    .slick-prev 
+      right: auto 
+      left: 0
+    .slick-next 
+      right: 0 
+      left: auto
+    .slick-prev::after,
+    .slick-next::after
+      display: none

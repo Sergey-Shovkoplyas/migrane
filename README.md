@@ -4,6 +4,10 @@ Pages
 - https://sergey-shovkoplyas.github.io/migrane/app/index.html
 - https://sergey-shovkoplyas.github.io/migrane/app/migrane.html
 - https://sergey-shovkoplyas.github.io/migrane/app/how.html
+- https://sergey-shovkoplyas.github.io/migrane/app/why.html
+- https://sergey-shovkoplyas.github.io/migrane/app/what.html
+- https://sergey-shovkoplyas.github.io/migrane/app/test.html
+- https://sergey-shovkoplyas.github.io/migrane/app/promo.html
 
 Start template with (optional)
 - normalize.css

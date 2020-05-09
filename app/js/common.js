@@ -48,4 +48,40 @@ $( document ).ready(function() {
 		fade: true
 	});
 
+	// ------------------------------ why --------------------
+
+	$('.why__slider').slick({
+		slidesToShow: 1,
+		infinite: false,
+		dots: true
+	});
+
+	$('.why__neuros-item').on('click', function() {
+			$(this).addClass('active');
+			$('.why__neuros-item').not($(this)).removeClass('active');
+			let num = +$(this).attr('data-num') - 1;
+			let text = $('.why__neuros-text')[num];
+			$('.why__neuros-text').not(text).removeClass('active');
+			$(text).addClass('active');
+	});
+
+	// ------------------------------ what --------------------
+
+	$('.what__halp-slider').slick({
+		slidesToShow: 3,
+		infinite: false,
+		centerMode: true,
+		variableWidth: true
+	});
+
+	// ------------------------------ promo --------------------
+
+	$('.promo__consultation').on('click', function() {
+		$('.promo__papup-owerlay').fadeIn();
+	});
+
+	$('.promo__papup-close').on('click', function() {
+		$('.promo__papup-owerlay').fadeOut();
+	});
+
 });

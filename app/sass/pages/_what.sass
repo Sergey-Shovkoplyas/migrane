@@ -1,0 +1,157 @@
+
+.what__alert-wrap 
+  margin-top: 20px
+  margin-bottom: 35px
+  padding: 35px 125px 35px 145px
+  background-color: #fff
+  box-shadow: 5px 5px 25px 0px rgba(179, 179, 179, 0.25)
+  border-radius: 8px
+  +media-sm 
+    padding: 15px
+
+.what__alert-row
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.what__alert-img 
+  width: 95px
+  margin-right: 20px
+  img 
+    width: 100%
+
+.what__alert-text
+  width: 555px
+
+.what__alert-title
+  font-size: 18px
+  color: #FF2626
+  margin-bottom: 10px
+
+
+// -------------------- what__halp ---------------------
+
+.what__halp-btn
+  max-width: 520px
+  margin: 0 auto
+  margin-bottom: 40px
+
+.what__halp-title
+  font-size: 30px
+  text-align: center
+  line-height: 1.24
+  margin-bottom: 35px
+  +media-sm 
+    font-size: 26px
+
+.what__halp-slider
+  margin-bottom: 40px 
+  .slick-center
+    opacity: 1
+  .slick-prev
+    width: 23px
+    height: 33px
+    z-index: 1
+  .slick-next
+    width: 23px
+    height: 33px
+    z-index: 1
+    right: 315px
+  .slick-prev
+    left: auto
+    right: 620px
+    transform: translate(0, -50%) rotate(180deg)
+    &::before
+      content: ''
+      display: block
+      width: 23px
+      height: 33px
+      background: url('../img/migrate-reason-arrow.png') no-repeat center
+  .slick-next::before
+    content: ''
+    display: block
+    width: 23px
+    height: 33px
+    background: url('../img/migrate-reason-arrow.png') no-repeat center
+  .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before
+    opacity: 0
+  +media-md
+    .slick-prev
+      right: 485px
+    .slick-next
+      right: 185px
+  +media-sm 
+    .slick-next
+      top: 50%
+      right: -10px
+    .slick-prev
+      top: 50%
+      right: auto 
+      left: -10px
+  
+
+.what__halp-item
+  opacity: .5
+  margin: 0 10px
+  width: 300px
+  height: 410px
+  padding: 25px 30px
+  box-shadow: 5px 5px 25px 0px rgba(179, 179, 179, 0.25)
+  border-radius: 8px
+  background-color: #fff
+
+.what__halp-name
+  font-size: 28px 
+  line-height: 1.25
+  margin-bottom: 15px
+  color: #5E77FF
+  +media-sm 
+    font-size: 25px
+
+
+.migrane-reason__slider
+  .slick-dots
+    bottom: -50px
+
+
+
+  .slick-prev
+    width: 23px
+    height: 33px
+    z-index: 1
+    
+
+  .slick-next
+    width: 23px
+    height: 33px
+    z-index: 1
+    right: 200px
+
+  .slick-prev
+    left: auto
+    right: 250px
+    transform: translate(0, -50%) rotate(180deg)
+    &::before
+      content: ''
+      display: block
+      width: 23px
+      height: 33px
+      background: url('../img/migrate-reason-arrow.png') no-repeat center
+
+  .slick-next::before
+    content: ''
+    display: block
+    width: 23px
+    height: 33px
+    background: url('../img/migrate-reason-arrow.png') no-repeat center
+
+  .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before
+    opacity: 0
+  +media-sm 
+    .slick-next
+      top: 110%
+      right: 20px
+    .slick-prev
+      top: 110%
+      right: auto 
+      left: 20px

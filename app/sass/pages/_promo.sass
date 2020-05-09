@@ -1,0 +1,321 @@
+.promo__advantage
+  padding: 50px 0px 60px 
+  +media-sm 
+    padding: 30px 0px
+  
+.promo__advantage-wrap
+  max-width: 720px 
+  margin: 0 auto
+
+.promo__title
+  font-size: 30px
+  line-height: 1.25
+  text-align: center
+  margin-bottom: 30px
+  +media-sm 
+    margin-bottom: 15px
+
+.promo__advantage-row
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -40px
+
+.promo__advantage-item
+  position: relative
+  width: 50%
+  padding: 15px 40px
+  &:nth-child(1)
+    .promo__advantage-text::before
+      background: url('../img/1.png')
+  &:nth-child(2)
+    .promo__advantage-text::before
+      background: url('../img/2.png')
+  &:nth-child(3)
+    .promo__advantage-text::before
+      background: url('../img/3.png')
+  &:nth-child(4)
+    .promo__advantage-text::before
+      background: url('../img/4.png')
+  +media-sm 
+    width: 100%
+
+
+
+.promo__advantage-text
+  position: relative
+  padding-left: 105px
+  &::before 
+    position: absolute
+    content: ''
+    top: 50%
+    left: 0
+    transform: translate(0, -50%)
+    width: 70px
+    height: 70px
+    background-color: yellow
+  +media-sm 
+    min-height: 66px
+
+// ------------------ promo__plan ---------------------------
+
+.promo__plan
+  position: relative
+  padding: 50px 0px 70px 
+  background: linear-gradient(180deg, #EBFFFA 0%, #C1CBDB 100%)
+  +media-sm 
+    padding: 30px 0px 40px
+
+.promo__line
+  position: absolute
+  top: 150px
+  height: 3px
+  width: 100%
+  background-color: #707070
+  +media-sm 
+    display: none
+
+.promo__plan-row
+  display: flex
+  margin: 0 -15px
+  +media-sm 
+    flex-wrap: wrap
+
+
+.promo__plan-col
+  width: 25%
+  padding: 0 15px
+  +media-sm 
+    width: 50%
+
+.promo__plan-item 
+  position: relative
+  padding-top: 96px
+  text-align: center
+  &::before 
+    position: absolute
+    content: '1'
+    display: flex
+    justify-content: center
+    align-items: center
+    top: 0
+    left: 50%
+    transform: translate(-50%, 0)
+    width: 66px
+    height: 66px
+    border-radius: 50%
+    border: 3px solid #474CDB
+    font-size: 30px
+    color: #474CDB
+    background-color: #daeaed
+  &.item-2::before
+    content: '2'
+    border: 3px solid #478FDB
+    color: #478FDB
+  &.item-3::before
+    content: '3'
+    border: 3px solid #50B7DC
+    color: #50B7DC
+  &.item-4::before
+    content: '4'
+    border: 3px solid #50D9DC
+    color: #50D9DC
+  +media-sm 
+    margin-bottom: 15px
+    padding-top: 74px
+
+
+.promo__plan-item-title
+  font-size: 23px
+  line-height: 1.2
+  margin-bottom: 25px 
+  text-align: center
+
+// ------------------ promo__online ---------------------------
+
+.promo__online
+  padding: 50px 0px 90px
+  background-color: #E8FFEC
+  +media-sm 
+    padding: 30px 0px 40px
+
+.promo__online-wrap
+  max-width: 720px
+  margin: 0 auto
+
+.promo__online-row
+  display: flex
+  justify-content: space-between
+  +media-sm 
+    flex-wrap: wrap
+
+.promo__online-text
+  font-size: 20px
+  line-height: 1.25
+  width: 50%
+  +media-sm 
+    width: 100%
+    margin-bottom: 15px
+
+.promo__online-btn
+  width: 50%
+  +media-sm 
+    width: 100%
+
+
+// ------------------ promo__contact ---------------------------
+
+.promo__contact
+  background-color: #fff
+  padding: 65px 0px 45px 
+  +media-sm 
+    padding: 30px 0px 40px
+
+.promo__contact-wrap
+  max-width: 720px
+  margin: 0 auto
+
+.promo__contact-title
+  text-align: center
+  font-size: 28px
+  line-height: 1.25
+  +media-md 
+    font-size: 27px
+  +media-sm
+    font-size: 20px
+
+.promo__contact-subtitle
+  font-size: 23px
+  text-align: center
+  line-height: 1.25
+  margin-bottom: 15px
+  +media-sm
+    font-size: 17px
+
+.promo__contact-row
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.promo__contact-col
+  width: 46%
+  padding-bottom: 5px
+  &.col-align
+    align-self: flex-end
+  input 
+    width: 100%
+    border-radius: 4px
+    border: none
+    padding: 13px 15px
+    background-color: #EFEEF8
+    outline: none 
+    color: #4A4A4A
+  input:focus 
+    border: 1px solid #474CDB
+  +media-sm 
+    width: 100%
+  
+.promo__contact-form-phone
+  position: relative
+  input
+    padding-left: 35px
+    font-size: 18px
+  &::before 
+    position: absolute
+    content: ''
+    top: 50%
+    left: 10px
+    transform: translate(0, -50%)
+    width: 15px 
+    height: 11px
+    background: url('../img/promo-flag.png')
+
+.promo__contact-btn
+  width: 100%
+  button 
+    width: 100%
+    cursor: pointer
+  +media-sm 
+    margin-top: 15px
+
+// --------------------- .promo__papup --------------------------
+
+.promo__papup-owerlay
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(145, 145, 148, .7)
+
+.promo__papup
+  position: absolute
+  left: 50%
+  top: 130px
+  transform: translate(-50%, 0px)
+  width: 495px
+  height: 390px
+  padding: 30px 65px 50px
+  background-color: #fff
+  border-radius: 4px
+  text-align: center
+  a 
+    margin-bottom: 15px
+  +media-sm 
+    width: 90%
+    height: 400px
+    padding: 30px
+
+.promo__papup-logo
+  text-align: center
+  margin-bottom: 10px
+
+.promo__papup-text
+  font-size: 19px
+  margin-bottom: 5px
+
+.promo__papup-tel
+  .button
+    background-color: #61B064
+    font-size: 23px
+    background: #61B064 url('../../img/pfone.png') no-repeat left 35px top 8px
+  +media-sm 
+    .button
+      font-size: 17px
+      background: #61B064 url('../../img/pfone.png') no-repeat left 8px top 12px
+      background-size: 20px 20px
+
+.promo__papup-ask
+  .button 
+    border: 4px solid #5E77FF
+    color: #5E77FF
+    background: #fff
+    text-transform: uppercase
+    font-size: 28px
+  +media-sm 
+    .button 
+      font-size: 21px
+
+.promo__papup-close
+  position: absolute
+  padding-right: 22px
+  top: 15px
+  right: 15px
+  cursor: pointer
+  color: #4A4A4A
+  &:hover 
+    color: #5E77FF
+  &::before,
+  &::after 
+    position: absolute
+    content: ''
+    top: 50%
+    right: 0
+    transform: translate(0px, -50%)
+    width: 15px
+    height: 2px
+    background: #AFB9F9
+  &::before
+    transform: translate(0px, -50%) rotate(45deg)
+  &::after
+    transform: translate(0px, -50%) rotate(-45deg)

@@ -1,0 +1,244 @@
+.why__slider-wrap
+  padding: 25px 0px
+  margin-top: 20px
+  background: linear-gradient(0deg, #FFA39E 0%, #AEBBFF 80%)
+
+.why__slider-container
+  max-width: 436px
+  margin: 0 auto 
+  border-radius: 8px
+  border: 5px solid #5E77FF
+  background-color: #fff
+
+.why__slider
+  padding: 35px 40px 50px
+  
+.why__slider 
+  &.slick-dotted
+    margin-bottom: 0
+  .slick-dots
+    left: 0
+    bottom: 15px
+    li 
+      width: 6px
+      height: 6px
+      border-radius: 50%
+      opacity: .3
+      margin: 0 3px
+    li.slick-active 
+      opacity: 1
+    button 
+      padding: 0
+      width: 6px
+      height: 6px
+      border-radius: 50%
+      background: #353C48
+    button::before
+      display: none
+  .slick-prev,
+  .slick-next 
+    width: 36px
+    height: 36px
+    border-radius: 50%
+    background-color: #fff
+    border: 1px solid #E6EAEE
+  .slick-prev
+    left: -60px  
+  .slick-next
+    right: -60px 
+  .slick-next::before 
+    opacity: 1
+    content: ''
+    width: 0
+    height: 0
+    font-size: 0
+    border-style: solid
+    border-width: 5px 0 5px 6px
+    border-color: transparent transparent transparent #E6EAEE
+  .slick-prev::before 
+    opacity: 1
+    content: ''
+    width: 0
+    height: 0
+    font-size: 0
+    border-style: solid
+    border-width: 5px 6px 5px 0
+    border-color: transparent #E6EAEE transparent transparent 
+  +media-sm 
+    .slick-prev
+      left: -17px  
+    .slick-next
+      right: -17px 
+
+// ------------------- why__ambulance -------------------------
+
+.why__ambulance 
+  padding: 30px 0px
+
+.why__ambulance-row
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.why__ambulance-img
+  width: 245px
+  margin-right: 40px
+  img 
+    width: 100%
+  +media-sm 
+    display: none
+
+.why__ambulance-text
+  width: 670px
+  font-size: 20px 
+  line-height: 25px
+  +media-sm 
+    width: auto
+    font-size: 18px
+
+.why__ambulance-btn
+  width: 450px
+  +media-sm 
+    width: auto
+
+// ------------------- why__neuron -------------------------
+
+.why__neuron
+  margin-bottom: 30px
+
+.why__neuron-wrap
+  position: relative
+  padding: 60px 90px 50px
+  background-color: #fff
+  box-shadow: 5px 5px 25px 0px rgba(179, 179, 179, 0.25)
+  border-radius: 8px
+  +media-md
+    padding: 50px
+  +media-sm
+    padding: 20px 15px
+
+.why__neuron-img
+  position: absolute
+  top: 60px
+  right: 45px
+  +media-sm 
+    display: none
+
+.why__neuron-text-wrap
+  padding-right: 280px
+  +media-sm 
+    padding-right: 0
+
+.why__neuron-title
+  font-size: 20px
+  line-height: 1.25
+  color: #5E77FF
+
+.why__neuron-btn
+  width: 450px
+  margin: 0 auto
+  +media-sm 
+    width: auto
+
+
+// ------------------------ .why_neurons --------------------
+
+
+.why__neuros
+  position: relative
+  padding: 15px 30px
+  border: 3px solid #FF830A
+  border-radius: 4px
+  background-color: #fff
+  +media-md 
+    padding: 15px
+
+.why__neuros-row
+  display: flex
+  justify-content: space-between
+  margin-bottom: 15px
+  padding-bottom: 10px
+  border-bottom: 2px solid #DFE2E5
+  +media-sm 
+    flex-wrap: wrap
+    justify-content: flex-start
+
+.why__neuros-item
+  font-size: 16px
+  font-weight: 500
+  color: #7F8FA4
+  padding: 5px
+  cursor: pointer
+  transition: .2s
+
+  &.wide
+    padding: 5px 40px
+
+  &:hover
+    color: #354052
+
+  &.active
+    position: relative
+    color: #354052
+
+  &::after
+    position: absolute
+    bottom: -12px
+    left: 0
+    content: ''
+    width: 100%
+    display: none
+    height: 2px
+    transition: 2s
+
+  &.active::after
+    display: block
+    background: #5E77FF
+
+  +media-sm 
+    margin-bottom: 10px
+    &::after
+      bottom: 0
+    &.wide
+      padding: 5px
+
+.why__neuros-text
+  display: none
+  font-size: 13px
+  line-height: 23px
+  transition: .3s
+
+  &.active
+    display: block
+
+
+// ------------------- why__main -------------------------
+
+.why__main
+  margin-bottom: 55px
+
+.why__main-row 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  +media-sm 
+    flex-wrap: wrap
+
+.why__main-text
+  width: 620px
+  font-size: 20px
+  line-height: 1.25
+  padding-right: 20px
+  +media-sm 
+    width: 100%
+    font-size: 18px
+    padding-right: 0
+    margin-bottom: 20px
+
+.why__main-img
+  margin: 0 auto
+
+.why__main-linck
+  text-decoration: underline
+  &:hover 
+    color: #5E77FF

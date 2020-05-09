@@ -74,7 +74,7 @@ $( document ).ready(function() {
 		variableWidth: true
 	});
 
-	// ------------------------------ promo --------------------
+	// ------------------------------ promo__popup --------------------
 
 	$('.promo__consultation').on('click', function() {
 		$('.promo__papup-owerlay').fadeIn();
@@ -82,6 +82,16 @@ $( document ).ready(function() {
 
 	$('.promo__papup-close').on('click', function() {
 		$('.promo__papup-owerlay').fadeOut();
+	});
+
+	// ------------------------------ test__papup --------------------
+
+	$('.test-info').on('click', function() {
+		$('.test__papup-owerlay').fadeIn();
+	});
+
+	$('.test__papup-close').on('click', function() {
+		$('.test__papup-owerlay').fadeOut();
 	});
 
 });

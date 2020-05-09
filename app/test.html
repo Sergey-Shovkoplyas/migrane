@@ -23,6 +23,8 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
+
+	<!-- <link rel="stylesheet" href="css/main.css"> -->
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -64,37 +66,239 @@
 			</div>
 		</section>
 
-		<section class="test-1">
+		<section class="test test-start">
 			<div class="container">
-				test
+
+				<div class="test-start__wrap">
+					<div class="test-start__title">Прохождение теста не займёт у вас более 2-х минут</div>
+					<div class="test-start__row">
+						<div class="test-start__data">
+
+							<div class="test-start__data-item-1">
+								<div class="test-start__data-title">Ваш возраст</div>
+								<input class="age test-start__age" type="number" placeholder="Введите возраст">
+							</div>
+
+							<div class="test-start__data-item-2">
+								<div class="test-start__data-title">Ваш пол</div>
+								<div class="gender test-start__gender">
+									<div class="male active test-start__male">Мужчина</div>
+									<div class="female test-start__female">Женщина</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="test-start__btn">
+
+							<a href="#" class="start_test button button--yellow">Начать тест</a>
+
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</section>
 
+		<section class="test test-1">
+			<div class="container container--910">
 
-
-
-
-		<section class="bottom-section">
-			<div class="container  container--860">
-				<div class="bottom-section__title">Также вы можете прочитать:</div>
-				<div class="bottom-section__row">
-					<div class="bottom-section__item">
-						<div class="bottom-section__img">
-							<img src="img/more1.jpg" alt="migrane">
-						</div>
-						<div class="bottom-section__text">Как болит голова?</div>
-						<a href="how.html" class="bottom-section__link">Читать далее</a>
+				<div class="test-step__wrap">
+					<div class="test-step__title">
+						Сколько приступов головной 
+						боли в месяц вы испытываете?
 					</div>
-					<div class="bottom-section__item">
-						<div class="bottom-section__img">
-							<img src="img/more2.jpg" alt="migrane">
-						</div>
-						<div class="bottom-section__text">Почему болит голова?</div>
-						<a href="why.html" class="bottom-section__link">Читать далее</a>
+
+					<div class="test-1__line-wrap">
+						<div class="test-1__line"></div>
 					</div>
+					<div class="test-1__line-numbers">
+						<span>1</span>
+						<span>2</span>
+						<span>3</span>
+						<span>4</span>
+						<span>5</span>
+						<span>6 и более</span>
+					</div>
+
+					<div class="test-step__btn">
+						<a href="#" class="next_test button button--light-gray">Далее</a>
+					</div>
+					<div class="test-step__pagination">1 из 3</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="test test-2">
+			<div class="container container--910">
+
+				<div class="test-step__wrap">
+					<div class="test-step__title">
+						Какова средняя длительность приступа головной боли?
+					</div>
+
+					<div class="test-2__row">
+						<div class="test-2__item">от 1 до 3 часов</div>
+						<div class="trig active test-2__item">от 4 часов до 1 дня</div>
+						<div class="trig test-2__item">от 2 до 3 дней</div>
+						<div class="test-2__item">4 дня и более</div>
+					</div>
+
+					<div class="test-step__btn">
+						<a href="#" class="next_test button button--light-gray">Далее</a>
+					</div>
+					<div class="test-step__pagination">2 из 3</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="test test-3">
+			<div class="container container--910">
+
+				<div class="test-step__wrap">
+					<div class="test-step__title">
+						Отметьте симптомы, которые сопровождают приступы головной боли
+					</div>
+
+					<div class="test-3__check">
+						
+						<div class="test-3__check-item">
+							<input id="check-1" type="checkbox">
+							<label class="check_box cb_group1" for="check-1">Односторонняя локализация</label>
+						</div>
+
+						<div class="test-3__check-item">
+							<input id="check-2" type="checkbox">
+							<label class="check_box cb_group1" for="check-2">Пульсирующий характер, усиление при движении</label>
+						</div>
+
+						<div class="test-3__check-item">
+							<input id="check-3" type="checkbox">
+							<label class="check_box cb_group1" for="check-3">Умеренная или высокая интенсивность</label>
+						</div>
+
+						<div class="test-3__check-item">
+							<input id="check-4" type="checkbox">
+							<label class="check_box cb_group2" for="check-4">Тошнота и/или рвота</label>
+						</div>
+
+						<div class="test-3__check-item">
+							<input id="check-5" type="checkbox">
+							<label class="check_box cb_group2" for="check-5">Звуко/светобоязнь</label>
+						</div>
+
+					</div>
+
+					<div class="test-step__btn">
+						<a href="#" class="next_test button button--light-gray">Далее</a>
+					</div>
+					<div class="test-step__pagination">3 из 3</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="test test-pos">
+			<div class="container  container--910">
+				<div class="test-pos__wrap">
+					<div class="test-pos__top">
+						<div class="test-pos__title">Сочуствуем</div>
+						<div class="test-pos__text">Если ДО или ВО ВРЕМЯ мигрени вы испытываете нарушения зрения/слуха/осязания или других органов чувств, то можно поговорить о мигрени с аурой <br><br>
+
+						<a href="migrane.html">Прочтите о мигрени:</a> вдруг вы чего-то не знали
+						</div>
+					</div>
+					<div class="test-pos__bottom">
+						<div class="test-pos__bottom-wrap">
+							<div class="test-pos__bottom-btn">
+								<a href="#" class="button button--blue">Записаться к врачу</a>
+							</div>
+							<div class="test-pos__bottom-text">Бесплатная консультация 
+								для Вас в клинике
+							</div>
+						</div>
+					</div>
+					<div class="test-info">i</div>
 				</div>
 			</div>
 		</section>
+
+		<section class="test test-result test-result-pos">
+			<div class="container">
+				<div class="test-result__wrap test-result-pos__wrap">
+
+					<div class="test-result__title">Сочувствуем…</div>
+					<div class="test-result__text">Если ДО или ВО ВРЕМЯ мигрени вы испытываете нарушение зрения/слуха/осязания или других органов чувств, то можно говорить о мигрени с аурой <br>
+						<span>Прочтите наши статьи: 
+							<a href="how.html">как</a> и <a href="why.html">почему болит голова</a> и <a href="what.html">что делать?</a></span>
+					</div>
+
+					<div class="test-info">i</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="test test-result test-result-neg">
+			<div class="container">
+				<div class="test-result__wrap test-result-neg__wrap">
+
+					<div class="test-result__title">Поздравляем!</div>
+					<div class="test-result__subtitle">У вас не мигрень!</div>
+					<div class="test-result__text">Прочтите наши статьи: 
+						<a href="how.html">как</a> и <a href="why.html">почему болит голова</a> и <a href="what.html">что делать?</a></div>
+
+					<div class="test-info">i</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="test__papup-owerlay">
+			<div class="test__papup">
+				<div class="test__papup-close">
+					<span>Закрыть</span>
+				</div>
+				<div class="test__papup-title">Вот международная классификация головных болей 3-го пересмотра</div>
+				<div class="test__papup-row">
+
+					<div class="test__papup-col">
+						<div class="test__papup-subtitle item-1">5 приступов головной боли</div>
+						<div class="test__papup-text"></div>
+					</div>
+
+					<div class="test__papup-col">
+						<div class="test__papup-subtitle item-2">Длительностью от 4 часов до 3 дней</div>
+						<div class="test__papup-text"></div>
+					</div>
+
+					<div class="test__papup-col">
+						<div class="test__papup-subtitle item-3">2 или более симптомов:</div>
+						<div class="test__papup-text">
+							Односторонняя 
+							локализация <br><br>
+							Пульсирующий характер, 
+							усиление при движении<br><br>
+							Умеренная или высокая 
+							интенсивность
+						</div>
+					</div>
+
+					<div class="test__papup-col">
+						<div class="test__papup-subtitle item-4">1 или оба симптома:</div>
+						<div class="test__papup-text">
+							Тошнота <br><br>
+							Пульсирующий характер, 
+							усиление при движении
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+
+
 	</main>
 	
 
@@ -109,6 +313,7 @@
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<!-- <script src="js/script.js"></script> -->
 	<script src="js/common.js"></script>
 
 </body>

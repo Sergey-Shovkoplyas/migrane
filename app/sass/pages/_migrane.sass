@@ -35,6 +35,9 @@
     text-align: center
     a
       padding: 5px 
+    a:hover
+      &::after 
+        width: 0%
     li 
       border-bottom: 1px solid rgba(0, 0, 0, .2)
     li:last-child 
@@ -42,6 +45,7 @@
 
 // ------------------ .migrane__rating -------------------
 .migrane__rating
+  margin-top: 20px
   padding: 28px 30px
   background: linear-gradient(135deg, #FFCE97 0%, #FFA05E 100%)
   +media-sm 
@@ -366,7 +370,6 @@
   margin: 0 auto
 
 .migrane-reason
-  width: 830px
   font-weight: 500
   padding-top: 10px
   margin-bottom: 23px
@@ -545,6 +548,7 @@
   line-height: 1.4
   color: #4A4949
   margin-bottom: 15px
+  margin-top: 15px
   &::after 
     content: ''
     position: absolute

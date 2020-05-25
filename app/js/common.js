@@ -45,7 +45,8 @@ $( document ).ready(function() {
 	$('.how__slider').slick({
 		slidesToShow: 1,
 		infinite: false,
-		fade: true
+		fade: true,
+		adaptiveHeight: true
 	});
 
 	// ------------------------------ why --------------------
@@ -76,7 +77,7 @@ $( document ).ready(function() {
 
 	// ------------------------------ promo__popup --------------------
 
-	$('.promo__consultation').on('click', function() {
+	$('.promo__consultation, .promo__online-btn').on('click', function() {
 		$('.promo__papup-owerlay').fadeIn();
 	});
 

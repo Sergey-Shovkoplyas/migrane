@@ -12,8 +12,6 @@
   line-height: 1.25
   text-align: center
   margin-bottom: 30px
-  +media-sm 
-    margin-bottom: 15px
 
 .promo__advantage-row
   display: flex
@@ -23,7 +21,7 @@
 .promo__advantage-item
   position: relative
   width: 50%
-  padding: 15px 40px
+  padding: 15px 48px
   &:nth-child(1)
     .promo__advantage-text::before
       background: url('../img/1.png')
@@ -44,6 +42,7 @@
 .promo__advantage-text
   position: relative
   padding-left: 105px
+  font-size: 16px
   &::before 
     position: absolute
     content: ''
@@ -60,10 +59,10 @@
 
 .promo__plan
   position: relative
-  padding: 50px 0px 70px 
+  padding: 50px 0px 50px 
   background: linear-gradient(180deg, #EBFFFA 0%, #C1CBDB 100%)
   +media-sm 
-    padding: 30px 0px 40px
+    padding: 30px 0px 30px
 
 .promo__line
   position: absolute
@@ -86,6 +85,7 @@
   padding: 0 15px
   +media-sm 
     width: 50%
+    margin-bottom: 20px
 
 .promo__plan-item 
   position: relative
@@ -125,18 +125,28 @@
 
 
 .promo__plan-item-title
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 54px
   font-size: 23px
   line-height: 1.2
   margin-bottom: 25px 
   text-align: center
 
+.promo__plan-item-text
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 66px
+
 // ------------------ promo__online ---------------------------
 
 .promo__online
-  padding: 50px 0px 90px
+  padding: 90px 0px 90px
   background-color: #E8FFEC
   +media-sm 
-    padding: 30px 0px 40px
+    padding: 50px 0px
 
 .promo__online-wrap
   max-width: 720px
@@ -154,7 +164,7 @@
   width: 50%
   +media-sm 
     width: 100%
-    margin-bottom: 15px
+    margin-bottom: 25px
 
 .promo__online-btn
   width: 50%
@@ -166,9 +176,8 @@
 
 .promo__contact
   background-color: #fff
-  padding: 65px 0px 45px 
-  +media-sm 
-    padding: 30px 0px 40px
+  padding: 50px 0px
+
 
 .promo__contact-wrap
   max-width: 720px
@@ -187,7 +196,7 @@
   font-size: 23px
   text-align: center
   line-height: 1.25
-  margin-bottom: 15px
+  margin-bottom: 25px
   +media-sm
     font-size: 17px
 
@@ -197,7 +206,7 @@
   flex-wrap: wrap
 
 .promo__contact-col
-  width: 46%
+  width: 47%
   padding-bottom: 5px
   &.col-align
     align-self: flex-end
@@ -209,10 +218,12 @@
     background-color: #EFEEF8
     outline: none 
     color: #4A4A4A
+    font-size: 18px
   input:focus 
     border: 1px solid #474CDB
   +media-sm 
     width: 100%
+    margin-bottom: 20px
   
 .promo__contact-form-phone
   position: relative
@@ -291,10 +302,10 @@
     color: #5E77FF
     background: #fff
     text-transform: uppercase
-    font-size: 28px
+    font-size: 23px
   +media-sm 
     .button 
-      font-size: 21px
+      font-size: 17px
 
 .promo__papup-close
   position: absolute

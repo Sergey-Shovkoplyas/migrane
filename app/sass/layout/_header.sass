@@ -11,6 +11,22 @@
   display: flex
   justify-content: space-between
   align-items: center
+
+.header__key
+  display: none
+  a 
+    display: inline-block 
+    padding: 5px 
+    background-color: #fff
+    border-radius: 3px
+    color: #A1A3A4
+    font-size: 16px
+    margin-right: 5px
+  +media-sm 
+    display: block
+  +media-374 
+    a
+      font-size: 14px
   
 .header__logo
   display: block
@@ -21,7 +37,7 @@
 
 .header__nav 
   margin-right: 50px
-  +media-lg 
+  +media-md
     margin-right: 0px
   +media-sm 
     display: none

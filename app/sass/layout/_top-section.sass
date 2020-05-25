@@ -24,6 +24,12 @@
 .top-section__text 
   max-width: 300px
   margin-bottom: 42px
+  +media-sm 
+    text-shadow: 0 0 1px #fff
+
+.top-section__mark
+  font-weight: 700
+  text-decoration: underline
 
 .top-section__btn
   width: 165px
@@ -51,6 +57,9 @@
     background-size: cover
   .top-section__text 
     max-width: 470px
+  +media-sm 
+    .top-section__wrap
+      background-position: -440px center
 
 .top-section--what
   .top-section__wrap
@@ -59,6 +68,9 @@
     background-size: cover
   .top-section__text 
     max-width: 425px
+  +media-sm 
+    .top-section__wrap
+      background-position: -480px center
 
 .top-section--promo
   .top-section__wrap
@@ -84,6 +96,7 @@
     color: #5E77FF
     background:  url('../img/test-bg.jpg') no-repeat center
     background-size: cover
+    margin-bottom: 20px
   .top-section__text 
     max-width: 425px
     color: #525252
